@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #05001B;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid blue; /*for debugging*/
+    height: 80vh;
+    width: 80vh;
+
+}
+
+.col {
+    flex: 1;
+}
+
+.block {
+    border: 1px solid white;
+    flex-basis: calc(100% / 16);
+    height: calc(80vh / 16);
+    box-sizing: border-box;
+}
